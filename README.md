@@ -1,6 +1,6 @@
 #### 1) fork repository
 #### 2) clone it
-#### 3) install everything with "npm istall" in cmder
+#### 3) install everything with "npm install" in cmder
 #### 4) use task "grunt watch"
 #### 5) to see the changes, use build/index.html
 
