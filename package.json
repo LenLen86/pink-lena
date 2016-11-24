@@ -1,0 +1,13 @@
+{
+  "name": "html",
+  "private": true,
+  "devDependencies":
+  {
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-less": "1.2.0",
+    "grunt-contrib-watch": "1.0.0",
+    "load-grunt-tasks": "3.4.1"
+  }
+}
