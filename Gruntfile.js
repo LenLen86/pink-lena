@@ -31,7 +31,7 @@ module.exports = function(grunt){
           expand: true,
           cwd: "source",
           src: [
-            "img/**", "*.html"
+            "img/**/*", "*.html"
           ],
           dest: "build"
         }]
@@ -51,4 +51,3 @@ grunt.registerTask("build", [
     "less",
   ]);
 };
-
