@@ -1,0 +1,23 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-android-logo {
+        .stitches-sprite(-10px, -10px, 43px, 47px);
+    }
+
+    &.sprite-apple-logo {
+        .stitches-sprite(-73px, -10px, 47px, 56px);
+    }
+
+    &.sprite-microsoft-logo {
+        .stitches-sprite(-140px, -10px, 44px, 41px);
+    }
+}

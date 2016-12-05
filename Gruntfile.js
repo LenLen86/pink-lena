@@ -15,7 +15,7 @@ module.exports = function(grunt){
     // grunt-watch
     watch: {
       style: {
-        files: ["source/*.html", "source/less/**/*.less", "source/js/*.js"],
+        files: ["source/*.html", "source/less/**/*.less", "source/js/*.js", "source/fonts/**/*.woff"],
         tasks: ["clean", "copy", "less"],
         options: {
           spawn: false,
@@ -31,7 +31,7 @@ module.exports = function(grunt){
           expand: true,
           cwd: "source",
           src: [
-            "img/**/*", "*.html"
+            "img/**/*", "*.html", "fonts/**/*"
           ],
           dest: "build"
         }]

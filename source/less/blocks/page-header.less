@@ -1,0 +1,26 @@
+.page-header {
+  position: relative;
+  background-image: url("../img/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  &__top-part {
+    .clearfix;
+    width: 100%;
+    margin-bottom: 108px;
+    background-color: @header-bgcolor;
+    &--opened {
+      background-color: @main-nav_color;
+      box-shadow: 0 1px 0 0 #000;
+    }
+  }
+  &__bottom-part {
+    padding-top: 285px;
+    background-image: url("../img/iphone-5-in-hand.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  &__logo {
+    float: left;
+    padding: 20px;
+  }
+}
