@@ -1,0 +1,72 @@
+.contacts {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+  &__title {
+    margin-bottom: 45px;
+    text-align: center;
+    font-family: "OpenSansLight";
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__item {
+    margin-bottom: 30px;
+    font-family: "OpenSansBold";
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__data {
+    font-family: "OpenSansLight";
+    font-size: 24px;
+    color: @pink;
+    text-decoration: none;
+  }
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -74px;
+    width: 50%;
+    height: 34px;
+    z-index: 20;
+  }
+  &::before {
+    left: 0;
+    background-image:
+      linear-gradient(
+        to top right,
+        transparent 50%,
+        #fff 50%
+      );
+  }
+  &::after {
+    left: 50%;
+    background-image:
+      linear-gradient(
+        to top left,
+        transparent 50%,
+        #fff 50%
+      );
+  }
+}
+
+.index-footer__map {
+  position: relative;
+  min-height: 200px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    background-color: @pink;
+  }
+}
