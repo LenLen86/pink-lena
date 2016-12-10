@@ -7,14 +7,14 @@
   &__top-part {
     .clearfix;
     width: 100%;
-    margin-bottom: 107px;
     background-color: @header-bgcolor;
     &--opened {
       background-color: @main-nav_color;
       box-shadow: 0 1px 0 0 #000;
     }
   }
-  &__bottom-part {
+  &__bottom-part--index {
+    margin-top: 107px;
     padding-top: 285px;
     background-image: url("../img/iphone-5-in-hand.png");
     background-repeat: no-repeat;
@@ -23,5 +23,16 @@
   &__logo {
     float: left;
     padding: 20px;
+  }
+  &__title {
+    margin: 0;
+    padding: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: "OpenSansLight";
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #fff;
   }
 }

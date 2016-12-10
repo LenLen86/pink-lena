@@ -21,6 +21,14 @@
     font-size: 24px;
     color: @pink;
     text-decoration: none;
+    &:hover {
+      color: @main-nav_color;
+      border-bottom: 1px solid @main-nav_color;
+    }
+    &:active {
+      color: fade(@main-nav_color, 30%);
+      border-bottom: none;
+    }
   }
   &::before, &::after {
     content: "";
@@ -57,6 +65,7 @@
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100%, cover;
   &::after {
     content: "";
     position: absolute;

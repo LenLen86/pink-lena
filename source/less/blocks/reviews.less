@@ -48,13 +48,22 @@
   margin-right: 19px;
   width: 6px;
   height: 6px;
-  background-color: @slider-btncolor;
+  background-color: fade(@main-nav_color, 30%);
   border-radius: 50%;
   cursor: pointer;
+    &:hover {
+      background-color: fade(@main-nav_color, 60%);
+    }
+    &:active {
+      background-color: fade(@main-nav_color, 10%);
+    }
   }
   &__btn--active {
     background-color: #fff;
     border: 3px solid @main-nav_color;
     margin-right: 16px;
+    &:hover {
+      background-color: #fff;
+    }
   }
 }

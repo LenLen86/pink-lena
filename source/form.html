@@ -11,21 +11,23 @@
     <div class="page-header__top-part">
       <div class="page-header__logo">
           <a class="page-header__logo--form" href="index.html">
-            <img src="" width="75" height="22" alt="Логотип Пинк">
+            <img src="img/logotype-white-mobile.png" width="75" height="22" alt="Логотип Пинк">
           </a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggle"></span>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-        </ul>
+        <span class="main-nav__toggle main-nav__toggle--closed"></span>
+        <div class="main-nav__wrap main-nav__wrap--closed">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
-    <div class="page-header__bottom-part">
-      <h1 class="page-header__title">Конкурсрс на самое безбашеное путешествие с Пинк</h1>
+    <div class="page-header__bottom-part page-header__bottom-part--form">
+      <h1 class="page-header__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
     </div>
   </header>
   <main>
@@ -80,14 +82,14 @@
           </label>
         </div>
       </div>
-      <div class="contacts">
-        <div class="contacts-input">
-          <label for="phone" class="contacts-input__label">Номерок телефончика</label>
-          <input type="tel" class="contacts-input__field" id="phone" name="phone" placeholder="Номер, пожалуйста">
+      <div class="usercontacts">
+        <div class="usercontacts-input">
+          <label for="phone" class="usercontacts-input__label">Номерок телефончика</label>
+          <input type="tel" class="usercontacts-input__field" id="phone" name="phone" placeholder="Номер, пожалуйста">
         </div>
-        <div class="contacts-input">
-          <label for="mail" class="contacts-input__label">Адресок почты</label>
-          <input type="email" class="contacts-input__field"  id="mail" name="mail" placeholder="E-mail, пожалуйста">
+        <div class="usercontacts-input">
+          <label for="mail" class="usercontacts-input__label">Адресок почты</label>
+          <input type="email" class="usercontacts-input__field"  id="mail" name="mail" placeholder="E-mail, пожалуйста">
         </div>
       </div>
       <div class="travel-apps">
@@ -152,5 +154,6 @@
       <button class="modal-content__btn" type="button" title="Ok">Ok</button>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

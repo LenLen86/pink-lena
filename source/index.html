@@ -9,21 +9,23 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <div class="page-header__top-part">
+      <div class="page-header__top-part"> <!--page-header__top-part--opened-->
         <div class="page-header__logo">
             <img src="img/logotype-white-mobile.png" width="75" height="22" alt="Логотип Пинк">
         </div>
         <nav class="main-nav">
           <span class="main-nav__toggle main-nav__toggle--closed"></span>
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-          </ul>
+          <div class="main-nav__wrap main-nav__wrap--closed">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
-      <div class="page-header__bottom-part">
+      <div class="page-header__bottom-part page-header__bottom-part--index">
         <div class="load-app">
           <a class="load-app__btn" href="#">Скачать приложение</a>
           <div class="app-links">
@@ -140,5 +142,6 @@
       <div class="index-footer__map"></div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
