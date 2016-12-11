@@ -7,24 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class="container">
-    <header class="page-header">
-      <div class="page-header__top-part">
-        <div class="page-header__logo">
-            <img src="" width="75" height="22" alt="Логотип Пинк">
-        </div>
-        <nav class="main-nav">
-          <span class="main-nav__toggle"></span>
+  <header class="page-header">
+    <div class="page-header__top-part"> <!--page-header__top-part--opened-->
+      <div class="page-header__logo">
+          <img src="img/logotype-white-mobile.png" width="75" height="22" alt="Логотип Пинк">
+      </div>
+      <nav class="main-nav">
+        <span class="main-nav__toggle main-nav__toggle--closed"></span>
+        <div class="main-nav__wrap main-nav__wrap--closed">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="page-header__bottom-part">
-        <div class="load-app">
+        </div>
+      </nav>
+    </div>
+    <div class="page-header__bottom-part page-header__bottom-part--index">
+      <div class="load-app">
+        <div class="container">
           <a class="load-app__btn" href="#">Скачать приложение</a>
           <div class="app-links">
             <a class="app-link app-link--ios" href="#">Apple</a>
@@ -34,33 +36,37 @@
           <p class="load-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="info">
-        <div class="info__wrapper">
-          <div class="info__intro">
-            <p class="info__text">Устали от серости мегаполиса?</p>
-            <p class="info__text">Нам есть, что вам предложить!</p>
-          </div>
-          <div class="features">
-            <div class="features__items">
-              <div class="features__item features__item--disposition">
-                <b class="features-item__title">Поднимает настроение</b>
-                <p class="features-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </div>
-              <div class="features__item features__item--changes">
-                <b class="features-item__title">Меняет мир вокруг</b>
-                <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усились эффект</p>
-              </div>
-              <div class="features__item features__item--friends">
-                <b class="features-item__title">Заводит новых друзей</b>
-                <p class="features-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </div>
+    </div>
+  </header>
+  <main>
+    <section class="info">
+      <div class="container">
+        <div class="info__intro">
+          <p class="info__text">Устали от серости мегаполиса?</p>
+          <p class="info__text">Нам есть, что вам предложить!</p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="container">
+          <div class="features__items">
+            <div class="features__item features__item--disposition">
+              <b class="features-item__title">Поднимает настроение</b>
+              <p class="features-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="features__item features__item--changes">
+              <b class="features-item__title">Меняет мир вокруг</b>
+              <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усились эффект</p>
+            </div>
+            <div class="features__item features__item--friends">
+              <b class="features-item__title">Заводит новых друзей</b>
+              <p class="features-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
           </div>
-         </div>
-      </section>
-      <section class="reviews">
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
         <div class="reviews__list">
           <blockquote class="reviews__item">
             <cite class="reviews__author">Николай Петров</cite>
@@ -74,18 +80,20 @@
             <input type="radio" class="slider-nav__switcher" name="review" id="review-radio-3">
           </div>
           <div class="slider-nav__btns">
-            <label for="review-radio-1" class="slider-nav__btn">1</label>
-            <label for="review-radio-2" class="slider-nav__btn">2</label>
-            <label for="review-radio-3" class="slider-nav__btn">3</label>
+            <label for="review-radio-1" class="slider-nav__btn slider-nav__btn--active"></label>
+            <label for="review-radio-2" class="slider-nav__btn"></label>
+            <label for="review-radio-3" class="slider-nav__btn"></label>
           </div>
         </div>
-      </section>
-      <section class="price-list">
-        <table>
+      </div>
+    </section>
+    <section class="price-list">
+      <div class="container">
+        <table class="price-list__table">
           <tbody><tr class="price-list__items">
-            <th class="price-list__item price-list__item--base">База<br> 1,99 usd</th>
-            <th class="price-list__item price-list__item--standard">Стандарт<br> 3,99 usd</th>
-            <th class="price-list__item price-list__item--unlim">Анлим<br> 9,99 usd</th>
+            <th class="price-list__item price-list__item--base">База <span class="price-list__price">1,99 usd</span></th>
+            <th class="price-list__item price-list__item--standard">Стандарт <span class="price-list__price">3,99 usd</span></th>
+            <th class="price-list__item price-list__item--unlim">Анлим <span class="price-list__price">9,99 usd</span></th>
           </tr>
           <tr class="price-list__features">
             <td class="price-list__feature price-list__feature--yes">Розовый фильтр</td>
@@ -104,23 +112,25 @@
           </tr>
         </tbody></table>
         <div class="price-list__nav slider-nav">
-          <div class="slider-nav__switchers"> 
+          <div class="slider-nav__switchers">
             <input type="radio" class="slider-nav__switcher" name="price-list" id="price-list-radio-1">
             <input type="radio" class="slider-nav__switcher" name="price-list" id="price-list-radio-2" checked>
             <input type="radio" class="slider-nav__switcher" name="price-list" id="price-list-radio-3">
           </div>
           <div class="slider-nav__btns">
-            <label for="price-list-radio-1" class="slider-nav__btn">1</label>
-            <label for="price-list-radio-2" class="slider-nav__btn">2</label>
-            <label for="price-list-radio-3" class="slider-nav__btn">3</label>
+            <label for="price-list-radio-1" class="slider-nav__btn"></label>
+            <label for="price-list-radio-2" class="slider-nav__btn slider-nav__btn--active"></label>
+            <label for="price-list-radio-3" class="slider-nav__btn"></label>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="index-footer">
+      </div>
+    </section>
+  </main>
+  <footer class="index-footer">
+    <div class="container">
       <div class="contacts">
         <div class="contacts__title">
-          <b>Остались вопросы?<br> Свяжитесь с нами!</b>
+          Остались вопросы? Свяжитесь с нами!
         </div>
         <div class="contacts__list">
           <div class="contacts__item contacts__item--phone">
@@ -137,8 +147,9 @@
           </div>
         </div>
       </div>
-      <div class="index-footer__map"></div>
-    </footer>
-  </div>
+    </div>
+    <div class="index-footer__map"></div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

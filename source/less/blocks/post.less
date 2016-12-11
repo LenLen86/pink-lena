@@ -1,0 +1,58 @@
+.post-photo {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  background-color: @main-bgcolor;
+  text-align: center;
+  &__intro {
+    padding-bottom: 45px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+  }
+  &__image {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "OpenSansBold";
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    cursor: pointer;
+    &--upload {
+      color: @pink;
+      border: 3px solid @pink;
+      &:hover {
+        color: #fff;
+        background-color: @pink;
+      }
+      &:active {
+        color: fade(#fff, 30%);
+        background-color: @pink;
+      }
+    }
+    &--cancel {
+      color: @main-nav_color;
+      border: 3px solid @main-nav_color;
+      opacity: 0.1;
+      &:hover {
+        color: @main-nav_color;
+        border: 3px solid @main-nav_color;
+        opacity: 0.3;
+      }
+      &:active {
+        color: fade(#fff, 30%);
+        background-color: @main-nav_color;
+        border: 3px solid @main-nav_color;
+        opacity: 0.3;
+      }
+    }
+  }
+}

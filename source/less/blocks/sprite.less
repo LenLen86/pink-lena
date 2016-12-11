@@ -1,0 +1,79 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-academy-navy {
+        .stitches-sprite(-15px, -15px, 27px, 34px);
+    }
+
+    &.sprite-academy-pink {
+        .stitches-sprite(-72px, -15px, 27px, 34px);
+    }
+
+    &.sprite-android-logo {
+        .stitches-sprite(-129px, -15px, 43px, 47px);
+    }
+
+    &.sprite-apple-logo {
+        .stitches-sprite(-202px, -15px, 47px, 56px);
+    }
+
+    &.sprite-contrast-navy {
+        .stitches-sprite(-15px, -101px, 32px, 32px);
+    }
+
+    &.sprite-contrast-pink {
+        .stitches-sprite(-77px, -101px, 32px, 32px);
+    }
+
+    &.sprite-crop-navy {
+        .stitches-sprite(-139px, -101px, 44px, 44px);
+    }
+
+    &.sprite-crop-pink {
+        .stitches-sprite(-213px, -101px, 44px, 44px);
+    }
+
+    &.sprite-facebook {
+        .stitches-sprite(-15px, -175px, 9px, 19px);
+    }
+
+    &.sprite-fill-navy {
+        .stitches-sprite(-54px, -175px, 48px, 43px);
+    }
+
+    &.sprite-fill-pink {
+        .stitches-sprite(-132px, -175px, 48px, 43px);
+    }
+
+    &.sprite-glasses-pink {
+        .stitches-sprite(-279px, -15px, 59px, 40px);
+    }
+
+    &.sprite-glasses-white {
+        .stitches-sprite(-287px, -85px, 59px, 40px);
+    }
+
+    &.sprite-icon-heart {
+        .stitches-sprite(-287px, -155px, 14px, 12px);
+    }
+
+    &.sprite-microsoft-logo {
+        .stitches-sprite(-210px, -197px, 44px, 41px);
+    }
+
+    &.sprite-twitter {
+        .stitches-sprite(-284px, -197px, 20px, 15px);
+    }
+
+    &.sprite-youtube {
+        .stitches-sprite(-334px, -155px, 15px, 14px);
+    }
+}

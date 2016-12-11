@@ -1,0 +1,66 @@
+.filter {
+  &__btns {
+    margin-bottom: 20px;
+  }
+  &__btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    &--crop {
+      background-position: -136px -98px;
+    }
+    &--brightness {
+      background-position: -53px -172px;
+    }
+    &--contrast {
+      background-position: -6px -93px;
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+    &--activecrop {
+      background-position: -213px -101px;
+      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__range-controls {
+    position: relative;
+  }
+}
+
+.scale {
+  margin: 0 -40px;
+  margin-bottom: 38px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #dddfe0;
+  &__bar {
+  display: inline-block;
+  width: 240px;
+  height: 2px;
+  text-align: center;
+  background-color: @main-nav_color;
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: 9px;
+  left: 190px;
+  width: 10px;
+  height: 10px;
+  background-color: @main-bgcolor;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  cursor: pointer;
+  &:active {
+    background-color: @pink;
+  }
+}
