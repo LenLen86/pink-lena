@@ -1,0 +1,56 @@
+.page-footer {
+  &__wrapper {
+    .container;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 31px;
+    width: 147px;
+    height: 40px;
+    background-image:
+      url("../img/glasses-pink.png"),
+      url("../img/logotype-navy.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 100%, 100% 100%;
+    &:hover {
+      background-image:
+        url("../img/glasses-pink.png"),
+        url("../img/logotype-pink.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 0 100%, 100% 100%;
+    }
+    &:active {
+      background-image:
+        url("../img/glasses-pink.png"),
+        url("../img/logotype-navy.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 0 100%, 100% 100%;
+      opacity: 0.3;
+    }
+  }
+  &__copyright-title {
+    display: inline-block;
+    margin: 0;
+    margin-right: 13px;
+    line-height: 18px;
+  }
+  &__copyright-link {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 27px;
+    height: 34px;
+    background: url("../img/spritesheet.png") no-repeat;
+    background-position: -72px -15px;
+    &:hover {
+      background: url("../img/spritesheet.png") no-repeat;
+      background-position: -15px -15px;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

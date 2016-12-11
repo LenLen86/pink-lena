@@ -1,0 +1,81 @@
+.gallery {
+  .container;
+  margin-bottom: 30px;
+  text-align: center;
+  &__foto {
+    text-align: center;
+  }
+  &__foto--panoramic {
+    position: relative;
+    margin: 0 -20px;
+    &::before {
+      content: "Панорама дня";
+      display: block;
+      position: absolute;
+      right: 20px;
+      padding: 6px 20px;
+      font-family: "OpenSansBold";
+      font-size: 12px;
+      text-transform: uppercase;
+      background-color: @pink;
+      color: #fff;
+    }
+  }
+  &__item {
+    display: inline-block;
+    max-width: 280px;
+    margin-bottom: 20px;
+    padding-bottom: 22px;
+    background-color: @main-bgcolor;
+  }
+  &__author {
+    display: block;
+    margin-top: 25px;
+    padding: 0 18px;
+    text-align: left;
+    font-family: "OpenSansBold";
+    font-style: normal;
+  }
+  &__pubdate {
+    font-family: "OpenSansLight";
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin: 0;
+    padding: 15px 18px;
+    text-align: left;
+  }
+}
+
+.gallery-intro {
+  .container;
+  margin-bottom: 45px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.like-btn {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 12px;
+  color: @pink;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 18px;
+    width: 15px;
+    height: 13px;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: -287px -155px;
+  }
+}

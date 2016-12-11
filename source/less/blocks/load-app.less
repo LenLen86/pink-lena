@@ -1,11 +1,16 @@
 .load-app {
-  padding: 28px 20px;
+  padding: 28px 0;
   text-align: center;
   background-color: @darkblue;
+  &__wrap {
+    .container;
+  }
   &__btn{
     display: block;
+    width: 100%;
     margin-bottom: 27px;
-    padding: 15px 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-family: "OpenSansBold";
     font-size: 18px;
     line-height: 18px;
@@ -24,7 +29,6 @@
     }
   }
   &__text {
-    margin: 0;
     font-family: "OpenSansLight";
     color: #fff;
   }
@@ -32,7 +36,6 @@
 
 .app-links {
   width: 100%;
-  padding: 0;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -48,17 +51,17 @@
   &--ios {
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
-    background-position: -67px -10px;
+    background-position: -195px -15px;
   }
   &--andr {
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
-    background-position: -2px 0px;
+    background-position: -122px -5px;
   }
   &--ms {
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
-    background-position: -132px 0px;
+    background-position: -203px -187px;
   }
   &:nth-child(3n) {
     margin-right: 0;
