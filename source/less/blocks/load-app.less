@@ -2,12 +2,13 @@
   padding: 28px 0;
   text-align: center;
   background-color: @darkblue;
-  &__btn{
+  &__btn {
     display: block;
     width: 100%;
     margin-bottom: 27px;
     padding-top: 15px;
     padding-bottom: 15px;
+    box-sizing: border-box;
     font-family: "OpenSansBold";
     font-size: 18px;
     line-height: 18px;
@@ -26,6 +27,7 @@
     }
   }
   &__text {
+    margin: 0;
     font-family: "OpenSansLight";
     color: #fff;
   }
@@ -33,7 +35,7 @@
 
 .app-links {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   text-align: center;
 }
 
@@ -63,4 +65,25 @@
   &:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+
+@media (min-width: @tablet) {
+
+  .load-app {
+    min-width: 340px;
+    padding: 20px 5%;
+    background-color: transparent;
+    &__btn {
+      margin-bottom: 46px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  .app-links {
+    margin-bottom: 37px;
+  }
+
 }

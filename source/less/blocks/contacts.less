@@ -6,7 +6,7 @@
     margin-bottom: 45px;
     text-align: center;
     font-family: "OpenSansLight";
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 24px;
     line-height: 30px;
   }
@@ -78,4 +78,39 @@
     border-radius: 50%;
     background-color: @pink;
   }
+}
+
+@media (min-width: @tablet) {
+
+  .contacts {
+    &__title {
+      margin-bottom: 0;
+      padding: 0 70px;
+      font-size: 40px;
+      line-height: 46px;
+    }
+    &__item {
+      display: inline-block;
+      margin: 0;
+      margin-top: 55px;
+      margin-right: 100px;
+      text-align: center;
+      &:nth-child(2n), &:last-child {
+        margin-right: 0;
+      }
+    }
+    &::before, &::after {
+      bottom: -112px;
+      width: 50%;
+      height: 74px;
+      z-index: 20;
+    }
+  }
+
+  .index-footer__map {
+    min-height: 380px;
+    background-image: url("../img/map_tablet.jpg");
+    background-position: 0 -400px;
+  }
+
 }

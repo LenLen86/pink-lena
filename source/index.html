@@ -10,7 +10,7 @@
   <header class="page-header">
     <div class="page-header__top-part"> <!--page-header__top-part--opened-->
       <div class="page-header__logo">
-          <img src="img/logotype-white-mobile.png" width="75" height="22" alt="Логотип Пинк">
+
       </div>
       <nav class="main-nav">
         <span class="main-nav__toggle main-nav__toggle--closed"></span>
@@ -27,13 +27,16 @@
     <div class="page-header__bottom-part page-header__bottom-part--index">
       <div class="load-app">
         <div class="container">
-          <a class="load-app__btn" href="#">Скачать приложение</a>
-          <div class="app-links">
-            <a class="app-link app-link--ios" href="#">Apple</a>
-            <a class="app-link app-link--andr" href="#">Android</a>
-            <a class="app-link app-link--ms" href="#">Microsoft</a>
+          <div class="load-app__wrap">
+            <h1 class="page-header__index-title">Взгляните на жизнь иначе!</h1>
+            <a class="load-app__btn" href="#">Скачать приложение</a>
+            <div class="app-links">
+              <a class="app-link app-link--ios" href="#">Apple</a>
+              <a class="app-link app-link--andr" href="#">Android</a>
+              <a class="app-link app-link--ms" href="#">Microsoft</a>
+            </div>
+            <p class="load-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <p class="load-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </div>
@@ -65,11 +68,20 @@
         </div>
       </div>
     </section>
+    <section class="app-effect">
+      <div class="container">
+        <div class="app-effect__wrap">
+          <div class="app-effect__title">Эффект<br>на 24 часа!</div>
+          <div class="app-effect__text">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</div>
+          <a class="app-effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
     <section class="reviews">
       <div class="container">
         <div class="reviews__list">
           <blockquote class="reviews__item">
-            <cite class="reviews__author">Николай Петров</cite>
+            <cite class="reviews__author">Николай Петров<span class="reviews__author--info"> 25 лет, водитель трамвая</span></cite>
             <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </blockquote>
         </div>
@@ -91,21 +103,25 @@
       <div class="container">
         <table class="price-list__table">
           <tbody><tr class="price-list__items">
+            <th class="price-list__item price-list__item--hidden"></th>
             <th class="price-list__item price-list__item--base">База <span class="price-list__price">1,99 usd</span></th>
             <th class="price-list__item price-list__item--standard">Стандарт <span class="price-list__price">3,99 usd</span></th>
             <th class="price-list__item price-list__item--unlim">Анлим <span class="price-list__price">9,99 usd</span></th>
           </tr>
           <tr class="price-list__features">
+            <td class="price-list__feature price-list__feature--name">Розовый фильтр</td>
             <td class="price-list__feature price-list__feature--yes">Розовый фильтр</td>
             <td class="price-list__feature price-list__feature--yes">Розовый фильтр</td>
             <td class="price-list__feature price-list__feature--yes">Розовый фильтр</td>
           </tr>
           <tr class="price-list__features">
+            <td class="price-list__feature price-list__feature--name">Смайлики</td>
             <td class="price-list__feature price-list__feature--no">Смайлики</td>
             <td class="price-list__feature price-list__feature--yes">Смайлики</td>
             <td class="price-list__feature price-list__feature--yes">Смайлики</td>
           </tr>
           <tr class="price-list__features">
+            <td class="price-list__feature price-list__feature--name">Комментарии</td>
             <td class="price-list__feature price-list__feature--no">Комментарии</td>
             <td class="price-list__feature price-list__feature--no">Комментарии</td>
             <td class="price-list__feature price-list__feature--yes">Комментарии</td>
@@ -127,8 +143,8 @@
     </section>
   </main>
   <footer class="index-footer">
-    <div class="container">
-      <div class="contacts">
+    <div class="contacts">
+      <div class="container">
         <div class="contacts__title">
           Остались вопросы? Свяжитесь с нами!
         </div>
@@ -149,6 +165,22 @@
       </div>
     </div>
     <div class="index-footer__map"></div>
+    <div class="container">
+      <div class="page-footer__items">
+        <a href="index.html"><div class="page-footer__item page-footer__logo"></div></a>
+        <div class="page-footer__item page-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link--tw" href="#">Twiter</a>
+            <a class="social-link social-link--fb" href="#">Facebook</a>
+            <a class="social-link social-link--yt" href="#">Youtube</a>
+          </div>
+        </div>
+        <div class="page-footer__item page-footer__copyright">
+          <p class="page-footer__copyright-title">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,35 @@
+.app-effect {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+
+  .app-effect {
+    .clearfix;
+    margin-bottom: 105px;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    display: block;
+    background-image: url(../img/timer.png);
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    &__wrap {
+      float: right;
+      width: 50%;
+      text-align: left;
+    }
+    &__title {
+      margin-bottom: 17px;
+      font-family: "OpenSansBold";
+      font-size: 30px;
+      line-height: 36px;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+    &__link {
+      color: @pink;
+    }
+  }
+
+}

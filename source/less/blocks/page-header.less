@@ -4,10 +4,27 @@
   background-image: url("../img/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
+  &__logo {
+    float: left;
+    width: 75px;
+    height: 22px;
+    margin: 20px;
+    background-image: url("../img/logotype-white-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    &:hover {
+      background-image: url("../img/logotype-pink.png");
+      background-repeat: no-repeat;
+    }
+    &:active {
+      background-image: url("../img/logotype-white-mobile.png");
+      opacity: 0.3;
+    }
+  }
   &__top-part {
     .clearfix;
     width: 100%;
-    background-color: @header-bgcolor;
+    background-color: fade(#000, 30%);
     &--opened {
       background-color: @main-nav_color;
       box-shadow: 0 1px 0 0 #000;
@@ -23,10 +40,6 @@
   &__bottom-part--inner {
     min-height: 170px;
   }
-  &__logo {
-    float: left;
-    padding: 20px;
-  }
   &__title {
     margin: 0;
     padding: 35px 20px;
@@ -37,4 +50,65 @@
     font-weight: normal;
     color: #fff;
   }
+  &__index-title {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet) {
+
+  .page-header {
+    background-image: url("../img/back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    &__logo {
+      width: 150px;
+      height: 42px;
+      margin-left: 40px;
+      margin-top: 27px;
+      margin-bottom: 42px;
+      background-image:
+        url("../img/glasses-white.png"),
+        url("../img/logotype-white-mobile.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 0% 100%, 100% 100%;
+      &:hover {
+        background-image:
+          url("../img/glasses-pink.png"),
+          url("../img/logotype-pink.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0% 100%, 100% 100%;
+      }
+      &:active {
+        background-image:
+          url("../img/glasses-white.png"),
+          url("../img/logotype-white-mobile.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0% 100%, 100% 100%;
+        opacity: 0.3;
+      }
+    }
+    &__index-title {
+      display: block;
+      margin: 0;
+      margin-bottom: 32px;
+      padding: 0 40px;
+      text-align: center;
+      font-family: "OpenSansLight";
+      font-size: 40px;
+      line-height: 46px;
+      font-weight: normal;
+      color: #fff;
+    }
+    &__bottom-part--index  {
+      margin-top: 69px;
+      padding-top: 0;
+      padding-bottom: 78px;
+      padding-right: 50%;
+      background-image: url("../img/iphone-6-in-hand.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+  }
+
 }
