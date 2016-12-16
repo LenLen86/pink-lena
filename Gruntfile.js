@@ -15,7 +15,7 @@ module.exports = function(grunt){
     // grunt-watch
     watch: {
       style: {
-        files: ["source/*.html", "source/less/**/*.less", "source/js/*.js", "source/fonts/**/*.woff", "sourse/js/*.js"],
+        files: ["source/*.html", "source/less/**/*.less", "source/js/*.js", "source/fonts/**/*.woff", "source/js/*.js"],
         tasks: ["clean", "copy", "less"],
         options: {
           spawn: false,
@@ -43,11 +43,29 @@ module.exports = function(grunt){
       build: ["build"]
     },
 
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          base: 'build/',
+          hostname: '0.0.0.0',
+          protocol: 'http',
+          livereload: true,
+          open: true,
+        }
+      }
+    },
+
   });
 
 grunt.registerTask("build", [
     "clean",
     "copy",
     "less",
+  ]);
+
+grunt.registerTask("server", [
+    "connect",
+    "watch"
   ]);
 };
