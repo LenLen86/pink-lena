@@ -1,0 +1,30 @@
+.social-links {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  border: 3px solid fade(@main-nav_color, 10%);
+  border-radius: 50%;
+  background: url("../img/spritesheet.png") no-repeat;
+  &--tw {
+    background-position: -272px -182px;
+  }
+  &--fb {
+    background-position: 2px -163px;
+  }
+  &--yt {
+    margin-right: 0;
+    background-position: -317px -140px;
+  }
+  &:hover {
+    border: 3px solid @main-nav_color;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+}

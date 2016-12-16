@@ -1,0 +1,67 @@
+.reviews {
+  position: relative;
+  margin-bottom: 65px;
+  line-height: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -65px;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    z-index: 10;
+    background-image:
+      linear-gradient(
+        to bottom right,
+        transparent 50%,
+        @main-bgcolor 50%
+      );
+  }
+  &__list {
+    margin-bottom: 40px;
+  }
+  &__author {
+    font-family: "OpenSansBold";
+    font-size: 18px;
+    font-style: normal;
+  }
+  &__item {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.slider-nav__switchers {
+  display: none;
+}
+
+.slider-nav {
+  &__btns {
+    text-align: center;
+  }
+  &__btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 19px;
+  width: 6px;
+  height: 6px;
+  background-color: fade(@main-nav_color, 30%);
+  border-radius: 50%;
+  cursor: pointer;
+    &:hover {
+      background-color: fade(@main-nav_color, 60%);
+    }
+    &:active {
+      background-color: fade(@main-nav_color, 10%);
+    }
+  }
+  &__btn--active {
+    background-color: #fff;
+    border: 3px solid @main-nav_color;
+    margin-right: 16px;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}

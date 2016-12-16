@@ -1,0 +1,66 @@
+.load-app {
+  padding: 28px 0;
+  text-align: center;
+  background-color: @darkblue;
+  &__btn{
+    display: block;
+    width: 100%;
+    margin-bottom: 27px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "OpenSansBold";
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    &:hover {
+      background-color: #fff;
+      color: @pink;
+    }
+    &:active {
+      background-color: #fff;
+      color: fade(@pink, 30%);
+    }
+  }
+  &__text {
+    font-family: "OpenSansLight";
+    color: #fff;
+  }
+}
+
+.app-links {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.app-link {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  font-size: 0;
+  &--ios {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: -195px -15px;
+  }
+  &--andr {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: -122px -5px;
+  }
+  &--ms {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    background-position: -203px -187px;
+  }
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}

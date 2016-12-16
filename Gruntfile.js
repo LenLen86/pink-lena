@@ -68,5 +68,4 @@ grunt.registerTask("server", [
     "connect",
     "watch"
   ]);
-
 };
