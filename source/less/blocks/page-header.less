@@ -35,7 +35,7 @@
     padding-top: 285px;
     background-image: url("../img/iphone-5-in-hand.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top center;
   }
   &__bottom-part--inner {
     min-height: 170px;
@@ -58,9 +58,8 @@
 @media (min-width: @tablet) {
 
   .page-header {
+    margin-bottom: 55px;
     background-image: url("../img/back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
     &__logo {
       width: 150px;
       height: 42px;
@@ -91,7 +90,7 @@
     &__index-title {
       display: block;
       margin: 0;
-      margin-bottom: 32px;
+      margin-bottom: 33px;
       padding: 0 40px;
       text-align: center;
       font-family: "OpenSansLight";
@@ -101,13 +100,61 @@
       color: #fff;
     }
     &__bottom-part--index  {
-      margin-top: 69px;
+      .clearfix;
+      max-width: 940px;
+      margin: 0 auto;
+      margin-top: 73px;
       padding-top: 0;
-      padding-bottom: 78px;
-      padding-right: 50%;
+      padding-bottom: 85px;
       background-image: url("../img/iphone-6-in-hand.png");
       background-repeat: no-repeat;
-      background-position: top right;
+      background-position: right top;
+    }
+  }
+
+}
+
+@media (min-width: @desktop) {
+
+  .page-header {
+    margin-bottom: 78px;
+    background-image: url("../img/back-desktop.jpg");
+    &__logo {
+      width: 157px;
+      height: 43px;
+      margin-left: 0;
+      margin-right: 0;
+      background-image: url("../img/logotype-white-desktop.png");
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      &:hover {
+        background-image: url("../img/logotype-white-desktop.png");
+        background-position: 100% 100%;
+      }
+      &:active {
+        background-image: url("../img/logotype-white-desktop.png");
+        background-position: 100% 100%;
+        opacity: 0.3;
+      }
+    }
+    &__wrap {
+      width: 940px;
+      margin: 0 auto;
+      padding: 0 130px;
+    }
+    &__bottom-part--index {
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 92px;
+      padding-right: 0;
+      background-image: url("../img/iphone-6.-in-hand-desktop.png");
+      background-position: right top;
+    }
+    &__index-title {
+      margin-bottom: 60px;
+      padding: 0 35px;
+      font-size: 50px;
+      line-height: 58px;
     }
   }
 

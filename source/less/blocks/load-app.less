@@ -6,8 +6,8 @@
     display: block;
     width: 100%;
     margin-bottom: 27px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     box-sizing: border-box;
     font-family: "OpenSansBold";
     font-size: 18px;
@@ -71,8 +71,8 @@
 @media (min-width: @tablet) {
 
   .load-app {
-    min-width: 340px;
-    padding: 20px 5%;
+    max-width: 48.5%;
+    padding: 20px;
     background-color: transparent;
     &__btn {
       margin-bottom: 46px;
@@ -83,7 +83,27 @@
   }
 
   .app-links {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
+  }
+
+}
+
+@media (min-width: @desktop) {
+
+  .load-app {
+    padding: 20px 0;
+    &__wrap {
+      width: 300px;
+    }
+    &__btn {
+      margin-bottom: 65px;
+      font-size: 21px;
+      line-height: 21px;
+    }
+  }
+
+  .app-links {
+    margin-bottom: 57px;
   }
 
 }
