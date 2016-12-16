@@ -1,10 +1,10 @@
 {
   "name": "html",
   "private": true,
-  "devDependencies":
-  {
+  "devDependencies": {
     "grunt": "0.4.x",
     "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "1.0.0",
     "grunt-contrib-less": "1.2.0",
     "grunt-contrib-watch": "1.0.0",
