@@ -71,7 +71,7 @@
     <section class="app-effect">
       <div class="container">
         <div class="app-effect__wrap">
-          <div class="app-effect__title">Эффект<br>на 24 часа!</div>
+          <div class="app-effect__title">Эффект<br class="br"> на 24 часа!</div>
           <div class="app-effect__text">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</div>
           <a class="app-effect__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -80,9 +80,13 @@
     <section class="reviews">
       <div class="container">
         <div class="reviews__list">
+          <div class="reviews__arrows">
+            <span class="reviews__arrow reviews__arrow--back"></span>
+            <span class="reviews__arrow reviews__arrow--next"></span>
+          </div>
           <blockquote class="reviews__item">
             <cite class="reviews__author">Николай Петров<span class="reviews__author--info"> 25 лет, водитель трамвая</span></cite>
-            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="reviews__text"><q class="quotes">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
           </blockquote>
         </div>
         <div class="reviews__nav slider-nav">
@@ -146,7 +150,8 @@
     <div class="contacts">
       <div class="container">
         <div class="contacts__title">
-          Остались вопросы? Свяжитесь с нами!
+          Остались вопросы?<br>
+          Свяжитесь с нами!
         </div>
         <div class="contacts__list">
           <div class="contacts__item contacts__item--phone">
@@ -183,5 +188,6 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

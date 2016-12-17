@@ -1,17 +1,17 @@
 .contacts {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
   &__title {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     text-align: center;
     font-family: "OpenSansLight";
     font-weight: normal;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 28px;
   }
   &__item {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-family: "OpenSansBold";
     font-size: 18px;
     line-height: 24px;
@@ -19,6 +19,7 @@
   &__data {
     font-family: "OpenSansLight";
     font-size: 24px;
+    line-height: 28px;
     color: @pink;
     text-decoration: none;
     &:hover {
@@ -34,7 +35,7 @@
     content: "";
     position: absolute;
     display: block;
-    bottom: -74px;
+    bottom: -54px;
     width: 50%;
     height: 34px;
     z-index: 20;
@@ -90,13 +91,26 @@
       line-height: 46px;
     }
     &__list {
+      display: flex;
+      flex-wrap: wrap;
+      /*
       width: 100%;
       font-size: 0;
+      */
     }
     &__item {
+      margin: 0 auto;
+      margin-top: 48px;
+      &--phone, &--mail {
+        width: 50%;
+      }
+      &--adress {
+        width: 100%;
+      }
+      /*
       display: inline-block;
       margin: 0;
-      margin-top: 55px;
+      margin-top: 48px;
       text-align: center;
       &--phone, &--mail {
         width: 50%;
@@ -104,9 +118,10 @@
       &--adress {
         width: 100%;
       }
+      */
     }
     &::before, &::after {
-      bottom: -112px;
+      bottom: -93px;
       width: 50%;
       height: 74px;
       z-index: 20;
@@ -118,5 +133,55 @@
     background-image: url("../img/map_tablet.jpg");
     background-position: 0 -400px;
   }
+
+}
+
+@media (min-width: @desktop) {
+
+  .contacts {
+    &__title {
+      margin-bottom: 0;
+      padding: 0 70px;
+      font-size: 50px;
+      line-height: 58px;
+      }
+    &__item {
+      margin-top: 60px;
+      &--phone, &--mail, &--adress {
+        width: 33.333%;
+      }
+      &--phone {
+        order: 1;
+      }
+      &--adress {
+        order: 2;
+      }
+      &--mail {
+        order: 3;
+      }
+      /*
+      vertical-align: top;
+      &--phone, &--mail, &--adress {
+        width: 33.333%;
+      }
+      */
+    }
+    &__data {
+      padding-top: 25px;
+    }
+    &::before, &::after {
+      bottom: -124px;
+      width: 50%;
+      height: 104px;
+      z-index: 20;
+    }
+  }
+
+  .index-footer__map {
+    min-height: 505px;
+    background-image: url("../img/map-desktop.jpg");
+    background-position: 0 -400px;
+  }
+
 
 }

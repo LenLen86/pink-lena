@@ -101,7 +101,7 @@
     }
     &__bottom-part--index  {
       .clearfix;
-      max-width: 940px;
+      max-width: 1060px;
       margin: 0 auto;
       margin-top: 73px;
       padding-top: 0;
@@ -117,10 +117,10 @@
 @media (min-width: @desktop) {
 
   .page-header {
-    margin-bottom: 78px;
+    margin-bottom: 70px;
     background-image: url("../img/back-desktop.jpg");
     &__logo {
-      width: 157px;
+      width: 148px;
       height: 43px;
       margin-left: 0;
       margin-right: 0;
@@ -138,24 +138,24 @@
       }
     }
     &__wrap {
-      width: 940px;
-      margin: 0 auto;
-      padding: 0 130px;
+      .container;
     }
     &__bottom-part--index {
       max-width: 1200px;
       margin: 0 auto;
       margin-top: 92px;
-      padding-right: 0;
+      padding-bottom: 100px;
       background-image: url("../img/iphone-6.-in-hand-desktop.png");
       background-position: right top;
     }
     &__index-title {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       padding: 0 35px;
       font-size: 50px;
       line-height: 58px;
     }
+    &__top-part::after {
+      display: none;
+    }
   }
-
 }
