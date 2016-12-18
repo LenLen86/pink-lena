@@ -6,6 +6,9 @@
   margin-bottom: 45px;
   text-align: center;
   line-height: 30px;
+  &--condition {
+    display: none;
+  }
 }
 
 .text-input,
@@ -195,4 +198,29 @@
   100% {
     color: fade(#fff, 70%);
   }
+}
+
+@media (min-width:@tablet) {
+
+  .contest-intro {
+    margin-bottom: 45px;
+    padding: 0 60px;
+    font-size: 18px;
+    &--condition {
+      display: block;
+    }
+  }
+
+  .text-input {
+    display: flex;
+    &__field, &__label {
+      margin-bottom: 43px;
+    }
+    &__label {
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+    }
+  }
+
 }
