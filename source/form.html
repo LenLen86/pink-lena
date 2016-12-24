@@ -32,22 +32,22 @@
   </header>
   <main>
     <form class="contest-form" action="" method="post">
-      <div class="container">
-        <p class="contest-intro">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
-        <span class="contest-intro--condition">Пожалуйста, заполните форму ниже:</span></p>
-        <div class="personal-info">
-          <div class="text-input">
-            <label for="user-name" class="text-input__label">Имя:</label>
-            <input type="text" class="text-input__field" id="user-name" name="user-name" placeholder="Введите ваше имя">
-          </div>
-          <div class="text-input">
-            <label for="user-surname" class="text-input__label">Фамилия:</label>
-            <input type="text" class="text-input__field" id="user-surname" name="user-surname" placeholder="Укажите фамилию">
-          </div>
-          <div class="text-input">
-            <label for="user-patronymic" class="text-input__label">Отчество:</label>
-            <input type="text" class="text-input__field" id="user-patronymic" name="user-patronymic" placeholder="Ну и отчество тоже">
-          </div>
+      <div class="contest-intro">
+        <p class="contest-intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+        <span class="contest-intro__condition">Пожалуйста, заполните форму ниже:</span></p>
+      </div>
+      <div class="personal-info container">
+        <div class="text-input">
+          <label for="user-name" class="text-input__label">Имя:</label>
+          <input type="text" class="text-input__field" id="user-name" name="user-name" placeholder="Введите ваше имя">
+        </div>
+        <div class="text-input">
+          <label for="user-surname" class="text-input__label">Фамилия:</label>
+          <input type="text" class="text-input__field" id="user-surname" name="user-surname" placeholder="Укажите фамилию">
+        </div>
+        <div class="text-input">
+          <label for="user-patronymic" class="text-input__label">Отчество:</label>
+          <input type="text" class="text-input__field" id="user-patronymic" name="user-patronymic" placeholder="Ну и отчество тоже">
         </div>
       </div>
       <div class="trip-achievements">
@@ -87,16 +87,15 @@
           </div>
         </div>
       </div>
-      <div class="usercontacts">
-        <div class="container">
-          <div class="usercontacts-input">
-            <label for="phone" class="usercontacts-input__label">Номерок телефончика</label>
-            <input type="tel" class="usercontacts-input__field" id="phone" name="phone" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="usercontacts-input">
-            <label for="mail" class="usercontacts-input__label">Адресок почты</label>
-            <input type="email" class="usercontacts-input__field"  id="mail" name="mail" placeholder="E-mail, пожалуйста">
-          </div>
+      <div class="usercontacts container">
+        <h2 class="usercontacts__title">Контактная информация</h2>
+        <div class="usercontacts-input">
+          <label for="phone" class="usercontacts-input__label">Номерок телефончика</label>
+          <input type="tel" class="usercontacts-input__field usercontacts-input__field--phone" id="phone" name="phone" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="usercontacts-input">
+          <label for="mail" class="usercontacts-input__label">Адресок почты</label>
+          <input type="email" class="usercontacts-input__field usercontacts-input__field--mail"  id="mail" name="mail" placeholder="E-mail, пожалуйста">
         </div>
       </div>
       <div class="travel-apps">
@@ -121,33 +120,33 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="emotions">
-          <h2 class="emotions__title">Опишите свои эмоции</h2>
-          <div class="textarea-input">
-            <textarea name="message" class="textarea-input__field" rows="8">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </div>
-        </div>
-        <div class="submit">
-          <button class="submit__input" type="submit">Отправить форму</button>
-          <p class="submit__legend"><sup class="submit__mark">*</sup>&mdash; обязательные поля</p>
+      <div class="emotions container">
+        <h2 class="emotions__title">Опишите свои эмоции</h2>
+        <div class="textarea-input">
+          <textarea name="message" class="textarea-input__field" rows="8">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
       </div>
+      <div class="submit container">
+        <button class="submit__input" type="submit">Отправить форму</button>
+        <p class="submit__legend"><sup class="submit__mark">*</sup>&mdash; обязательные <span class="submit__legend--plus-text">для заполнения</span> поля</p>
+    </div>
     </form>
   </main>
   <footer class="page-footer">
     <div class="container">
-      <a href="index.html"><div class="page-footer__logo"></div></a>
-      <div class="page-footer__social">
-        <div class="social-links">
-          <a class="social-link social-link--tw" href="#">Twiter</a>
-          <a class="social-link social-link--fb" href="#">Facebook</a>
-          <a class="social-link social-link--yt" href="#">Youtube</a>
+      <div class="page-footer__items page-footer__items--inner">
+        <a href="index.html"><div class="page-footer__item page-footer__logo"></div></a>
+        <div class="page-footer__item page-footer__social">
+          <div class="social-links">
+            <a class="social-link social-link--tw" href="#">Twiter</a>
+            <a class="social-link social-link--fb" href="#">Facebook</a>
+            <a class="social-link social-link--yt" href="#">Youtube</a>
+          </div>
         </div>
-      </div>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-title">Разработано</p>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__item page-footer__copyright">
+          <p class="page-footer__copyright-title">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </div>
   </footer>
