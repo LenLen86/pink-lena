@@ -1,28 +1,47 @@
 .social-links {
   font-size: 0;
-  margin-bottom: 40px;
+  line-height: 0;
+  margin-bottom: 30px;
 }
 
 .social-link {
+  position: relative;
   display: inline-block;
   width: 44px;
   height: 44px;
   margin-right: 12px;
   border: 3px solid fade(@main-nav_color, 10%);
   border-radius: 50%;
-  background: url("../img/spritesheet.png") no-repeat;
-  &--tw {
-    background-position: -272px -182px;
-  }
-  &--fb {
-    background-position: 2px -163px;
-  }
-  &--yt {
+  &:last-child {
     margin-right: 0;
-    background-position: -317px -140px;
   }
+  /*
   &:hover {
     border: 3px solid @main-nav_color;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+  */
+}
+
+.social-icon {
+  fill: @pink;
+  position: absolute;
+  &--fb {
+    top: 27%;
+    left: 40%;
+  }
+  &--tw {
+    top: 33%;
+    left: 33%;
+  }
+  &--yt {
+    top: 33%;
+    left: 37%;
+  }
+  &:hover {
+    fill: @main-nav_color;
   }
   &:active {
     opacity: 0.1;
