@@ -6,6 +6,9 @@
   margin-bottom: 45px;
   text-align: center;
   line-height: 30px;
+  &__condition {
+    display: none;
+  }
 }
 
 .text-input,
@@ -195,4 +198,71 @@
   100% {
     color: fade(#fff, 70%);
   }
+}
+
+@media (min-width:@tablet) {
+
+  .contest-intro {
+    margin-bottom: 45px;
+    padding: 0 60px;
+    font-size: 18px;
+    &__condition {
+      display: block;
+    }
+  }
+
+  .text-input {
+    display: table;
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 28px;
+    &__label {
+      display: table-cell;
+      width: 1%;
+      padding-right: 15px;
+    }
+    &__field {
+      display: table-cell;
+      width: 99%;
+    }
+  }
+
+  .textarea-input {
+    &__field {
+      margin-bottom: 55px;
+    }
+  }
+
+  .submit__input {
+    padding: 15px 60px;
+  }
+
+}
+
+@media (min-width:@desktop) {
+
+  .contest-intro {
+    &__condition {
+      display: inline-block;
+    }
+  }
+
+  .checkbox-input {
+    width: 25%;
+    padding-left: 60px;
+  }
+
+  .text-input {
+    margin: 0;
+    padding: 0;
+    &__field {
+      margin: 0;
+    }
+  }
+
+  .textarea-input {
+    flex-grow: 1;
+  }
+
+
 }

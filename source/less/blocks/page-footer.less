@@ -39,20 +39,65 @@
   &__copyright-link {
     position: absolute;
     display: inline-block;
-    top: -2px;
+    top: -5px;
     margin: 0;
     padding: 0;
     font-size: 0;
-    width: 27px;
-    height: 34px;
-    background: url("../img/spritesheet.png") no-repeat;
-    background-position: -72px -15px;
+  }
+  &__copyright-icon {
+    fill: @pink;
     &:hover {
-      background: url("../img/spritesheet.png") no-repeat;
-      background-position: -15px -15px;
-    }
-    &:active {
-      opacity: 0.3;
+      fill: @main-nav_color;
     }
   }
+}
+
+.page-footer__items--index {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+
+  .page-footer {
+    margin-bottom: 0;
+    &__logo {
+      margin-bottom: 0;
+    }
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+    }
+    &__copyright-title {
+      margin-right: 40px;
+    }
+    &__copyright-link {
+      right: 0;
+    }
+
+  }
+
+}
+
+@media (min-width: @desktop) {
+
+  .page-footer {
+    &__logo {
+      width: 148px;
+      height: 43px;
+      background-image: url("../img/logotype-blue-desktop.png");
+      background-repeat: no-repeat;
+      &:hover {
+        background-image: url("../img/logotype-blue-desktop.png");
+      }
+    }
+    &__copyright-title {
+      font-size: 18px;
+    }
+    &__items {
+      padding: 70px 0;
+    }
+  }
+
 }

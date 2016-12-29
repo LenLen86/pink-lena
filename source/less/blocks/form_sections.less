@@ -5,6 +5,16 @@
   margin-bottom: 25px;
 }
 
+.usercontacts__title {
+  display: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: @pink;
+}
+
 .trip-achievements,
 .travel-apps {
   margin-bottom: 32px;
@@ -40,7 +50,241 @@
   line-height: 30px;
   text-transform: uppercase;
   }
+  &__legend--plus-text {
+    display: none;
+  }
   &__mark {
     color: @pink;
   }
+}
+
+@media (min-width:@tablet) {
+
+  .contest-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trip-achievements {
+    order: 4;
+  }
+
+  .usercontacts {
+    order: 3;
+  }
+
+  .travel-apps {
+    order: 2;
+  }
+
+  .emotions {
+    order: 5;
+  }
+
+  .submit {
+    order: 6;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .trip-achievements {
+    position: relative;
+    margin: 40px;
+    padding: 0 40px;
+    padding-top: 55px;
+    background-color: #fff;
+    border: 2px solid @input-brcolor;
+    &__title {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin: 0;
+      margin-left: -25%;
+      padding: 0 30px;
+      background-color: #fff;
+    }
+  }
+
+  .usercontacts {
+    position: relative;
+    margin: 40px;
+    padding: 0 60px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid @input-brcolor;
+    &__title {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin: 0;
+      margin-left: -20%;
+      padding: 0 30px;
+      background-color: #fff;
+    }
+  }
+
+  .usercontacts-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    &__label {
+      order: 2;
+    }
+    &__field {
+      order: 1;
+    }
+    &__field--phone {
+      background-image: url("../img/phone.png");
+      background-repeat: no-repeat;
+      background-position: 97% 50%;
+    }
+    &__field--mail {
+      background-image: url("../img/mail.png");
+      background-repeat: no-repeat;
+      background-position: 97% 50%;
+    }
+  }
+
+
+  .travel-apps {
+    position: relative;
+    margin: 40px;
+    padding: 0 40px;
+    padding-top: 55px;
+    background-color: #fff;
+    border: 2px solid @input-brcolor;
+    &__title {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin: 0;
+      margin-left: -25%;
+      padding: 0 30px;
+      background-color: #fff;
+    }
+  }
+
+  .emotions {
+    position: relative;
+    margin: 40px;
+    padding: 0 60px;
+    padding-top: 55px;
+    background-color: #fff;
+    border: 2px solid @input-brcolor;
+    &__title {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin: 0;
+      margin-left: -25%;
+      padding: 0 30px;
+      background-color: #fff;
+    }
+  }
+
+  .submit {
+    .clearfix;
+    &__input {
+      float: left;
+      width: auto;
+    }
+    &__legend {
+      float: right;
+    }
+  }
+
+}
+
+@media (min-width:@desktop) {
+
+  .contest-form {
+    max-width: 940px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contest-intro {
+    width: 100%;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 435px;
+    margin-right: 35px;
+    margin: 0;
+  }
+
+  .travel-apps {
+    display: flex;
+    width: 315px;
+    margin: 0;
+    margin-left: 35px;
+    padding-left: 70px;
+    &__title {
+      left: 20%;
+      margin-left: -12%;
+    }
+  }
+
+  .usercontacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 65px;
+    padding-left: 60px;
+    padding-right: 60px;
+    &__title {
+      margin-left: -15%;
+    }
+  }
+
+  .usercontacts-input {
+    width: 375px;
+    margin-bottom: 0;
+  }
+
+  .trip-achievements {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 65px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    &__title {
+      margin-left: -24%;
+    }
+  }
+
+  .emotions {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 65px;
+    margin-bottom: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+    &__title {
+      margin-left: -15%;
+    }
+  }
+
+  .submit__legend--plus-text {
+    display: inline-block;
+  }
+
 }
