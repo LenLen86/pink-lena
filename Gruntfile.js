@@ -2,70 +2,84 @@ module.exports = function(grunt){
   require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
-
-    //компилятор лесс
-    less: {
-      style: {
-        files: {
-          "build/css/style.css": "source/less/style.less"
+    less:{
+      style:{
+        files:{
+          "build/css/style.css":"source/less/style.less"
         }
       }
     },
 
-    // grunt-watch
-    watch: {
-      style: {
-        files: ["source/*.html", "source/less/**/*.less", "source/js/*.js", "source/fonts/**/*.woff", "source/js/*.js"],
-        tasks: ["clean", "copy", "less"],
-        options: {
+    clean:{
+      build:["build"]
+    },
+
+    copy:{
+      build:{
+        files:[{
+          expand: true, cwd: "source", src:["img/**/*","*.html","fonts/**/*","js/**/*"],
+          dest: "build"
+        }]
+      }
+    },
+
+    watch:{
+      style:{
+        files:["source/*.html","source/less/**/*.less","source/js/*.js","source/fonts/**/*.woff"],
+        tasks:["clean","copy","less"],
+        options:{
           spawn: false,
           livereload: true
         }
       }
     },
 
-    // grunt-copy
-    copy: {
-      build: {
-        files: [{
-          expand: true,
-          cwd: "source",
-          src: [
-            "img/**/*", "*.html", "fonts/**/*", "js/**/*"
-          ],
-          dest: "build"
-        }]
-      }
-    },
-
-    // grunt-clean
-    clean: {
-      build: ["build"]
-    },
-
-    connect: {
-      server: {
-        options: {
-          port: 9000,
-          base: 'build/',
-          hostname: '0.0.0.0',
-          protocol: 'http',
-          livereload: true,
-          open: true,
+    csso:{
+      style:{
+        options:{
+          report: "gzip"
+        },
+        files:{
+          "build/css/style.min.css":["build/css/style.css"]
         }
       }
     },
 
+    imagemin:{
+      images:{
+        options:{
+          optimizationLevel: 3
+        },
+        files:[{
+          expand: true,
+          src:["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    }
+
   });
 
-grunt.registerTask("build", [
+  grunt.registerTask("build",[
     "clean",
     "copy",
     "less",
+    "csso",
+    "imagemin"
   ]);
 
-grunt.registerTask("server", [
-    "connect",
-    "watch"
-  ]);
-};
+}
+
+/*
+connect: {
+  server: {
+    options: {
+      port: 9000,
+      base: 'build/',
+      hostname: '0.0.0.0',
+      protocol: 'http',
+      livereload: true,
+      open: true,
+    }
+  }
+}
+*/

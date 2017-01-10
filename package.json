@@ -1,13 +1,22 @@
 {
-  "name": "html",
-  "private": true,
+  "name": "pink-lena",
+  "version": "1.0.0",
+  "description": "Учебный проект Pink",
+  "author": "Мокруха Елена",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LenLen86/pink-lena.git"
+  },
   "devDependencies": {
-    "grunt": "0.4.x",
-    "grunt-contrib-clean": "1.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-less": "1.2.0",
-    "grunt-contrib-watch": "1.0.0",
-    "load-grunt-tasks": "3.4.1"
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-mqpacker": "^3.0.1",
+    "grunt-csso": "^2.1.0",
+    "load-grunt-tasks": "^3.5.2"
   }
 }
